@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		888BA9731A199B54008FF80E /* sample.html in Resources */ = {isa = PBXBuildFile; fileRef = 888BA9721A199B54008FF80E /* sample.html */; };
 		88BAC5D01A0C3F22006AF6AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BAC5CF1A0C3F22006AF6AC /* AppDelegate.swift */; };
 		88BAC5D21A0C3F22006AF6AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BAC5D11A0C3F22006AF6AC /* ViewController.swift */; };
 		88BAC5D51A0C3F22006AF6AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BAC5D31A0C3F22006AF6AC /* Main.storyboard */; };
 		88BAC5D71A0C3F22006AF6AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88BAC5D61A0C3F22006AF6AC /* Images.xcassets */; };
 		88BAC5DA1A0C3F22006AF6AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88BAC5D81A0C3F22006AF6AC /* LaunchScreen.xib */; };
 		88BAC5E61A0C3F22006AF6AC /* ToDo_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BAC5E51A0C3F22006AF6AC /* ToDo_ListTests.swift */; };
+		88BAC5F01A0EA920006AF6AC /* ToDoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BAC5EF1A0EA920006AF6AC /* ToDoListTableViewController.swift */; };
+		88BAC5F41A11D55A006AF6AC /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BAC5F21A11D1ED006AF6AC /* PassKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		888BA9721A199B54008FF80E /* sample.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = sample.html; sourceTree = "<group>"; };
 		88BAC5CA1A0C3F22006AF6AC /* ToDo List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDo List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BAC5CE1A0C3F22006AF6AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88BAC5CF1A0C3F22006AF6AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +40,8 @@
 		88BAC5DF1A0C3F22006AF6AC /* ToDo ListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ToDo ListTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BAC5E41A0C3F22006AF6AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88BAC5E51A0C3F22006AF6AC /* ToDo_ListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo_ListTests.swift; sourceTree = "<group>"; };
+		88BAC5EF1A0EA920006AF6AC /* ToDoListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListTableViewController.swift; sourceTree = "<group>"; };
+		88BAC5F21A11D1ED006AF6AC /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88BAC5F41A11D55A006AF6AC /* PassKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +66,7 @@
 		88BAC5C11A0C3F22006AF6AC = {
 			isa = PBXGroup;
 			children = (
+				88BAC5F21A11D1ED006AF6AC /* PassKit.framework */,
 				88BAC5CC1A0C3F22006AF6AC /* ToDo List */,
 				88BAC5E21A0C3F22006AF6AC /* ToDo ListTests */,
 				88BAC5CB1A0C3F22006AF6AC /* Products */,
@@ -80,9 +88,11 @@
 				88BAC5CF1A0C3F22006AF6AC /* AppDelegate.swift */,
 				88BAC5D11A0C3F22006AF6AC /* ViewController.swift */,
 				88BAC5D31A0C3F22006AF6AC /* Main.storyboard */,
+				88BAC5EF1A0EA920006AF6AC /* ToDoListTableViewController.swift */,
 				88BAC5D61A0C3F22006AF6AC /* Images.xcassets */,
 				88BAC5D81A0C3F22006AF6AC /* LaunchScreen.xib */,
 				88BAC5CD1A0C3F22006AF6AC /* Supporting Files */,
+				888BA9721A199B54008FF80E /* sample.html */,
 			);
 			path = "ToDo List";
 			sourceTree = "<group>";
@@ -168,7 +178,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 88BAC5C51A0C3F22006AF6AC /* Build configuration list for PBXProject "ToDo List" */;
+			buildConfigurationList = 88BAC5C51A0C3F22006AF6AC /* Build configuration list for PBXProject "ApplePaySample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -192,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				888BA9731A199B54008FF80E /* sample.html in Resources */,
 				88BAC5D51A0C3F22006AF6AC /* Main.storyboard in Resources */,
 				88BAC5DA1A0C3F22006AF6AC /* LaunchScreen.xib in Resources */,
 				88BAC5D71A0C3F22006AF6AC /* Images.xcassets in Resources */,
@@ -214,6 +225,7 @@
 			files = (
 				88BAC5D21A0C3F22006AF6AC /* ViewController.swift in Sources */,
 				88BAC5D01A0C3F22006AF6AC /* AppDelegate.swift in Sources */,
+				88BAC5F01A0EA920006AF6AC /* ToDoListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +403,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		88BAC5C51A0C3F22006AF6AC /* Build configuration list for PBXProject "ToDo List" */ = {
+		88BAC5C51A0C3F22006AF6AC /* Build configuration list for PBXProject "ApplePaySample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				88BAC5E71A0C3F22006AF6AC /* Debug */,
@@ -407,6 +419,7 @@
 				88BAC5EB1A0C3F22006AF6AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88BAC5EC1A0C3F22006AF6AC /* Build configuration list for PBXNativeTarget "ToDo ListTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +428,7 @@
 				88BAC5EE1A0C3F22006AF6AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
