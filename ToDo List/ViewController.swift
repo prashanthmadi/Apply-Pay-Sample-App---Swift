@@ -24,12 +24,12 @@ class ViewController: UIViewController,WKScriptMessageHandler {
     */
     override func loadView() {
         super.loadView()
-        var isPaymentEligible = PKPaymentAuthorizationViewController.canMakePayments()
+        let isPaymentEligible = PKPaymentAuthorizationViewController.canMakePayments()
         
-        var contentController = WKUserContentController();
+        let contentController = WKUserContentController();
         
         if(!isPaymentEligible){
-            var userScript = WKUserScript(
+            let userScript = WKUserScript(
                 source: "displayApplePayment()",
                 injectionTime: WKUserScriptInjectionTime.AtDocumentEnd,
                 forMainFrameOnly: true
@@ -42,7 +42,7 @@ class ViewController: UIViewController,WKScriptMessageHandler {
             )
         }
         
-        var config = WKWebViewConfiguration()
+        let config = WKWebViewConfiguration()
         config.userContentController = contentController
         
         self.webView = WKWebView(
@@ -54,7 +54,7 @@ class ViewController: UIViewController,WKScriptMessageHandler {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        println(selectedPhone)
+        print(selectedPhone)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -64,7 +64,7 @@ class ViewController: UIViewController,WKScriptMessageHandler {
     override func viewDidAppear(animated: Bool) {
         var urlPath = NSBundle.mainBundle().pathForResource("sample", ofType:"html")
         var url = NSURL(fileURLWithPath: urlPath!)
-        var request = NSURLRequest(URL: url!)
+        var request = NSURLRequest(URL: url)
         self.webView!.loadRequest(request)
     }
     
@@ -80,7 +80,7 @@ class ViewController: UIViewController,WKScriptMessageHandler {
     */
     func userContentController(userContentController: WKUserContentController, didReceiveScriptMessage message: WKScriptMessage) {
         if(message.name == "callbackHandler") {
-            println(" \(message.body)")
+            print(" \(message.body)")
             self.applePaymentProcess()
         }
     }
@@ -90,11 +90,11 @@ class ViewController: UIViewController,WKScriptMessageHandler {
     */
     func applePaymentProcess(){
         
-        println("Hello payment World before check ")
+        print("Hello payment World before check ")
         
         if(PKPaymentAuthorizationViewController.canMakePayments()){
             
-            println("Hello payment World ")
+            print("Hello payment World ")
             
             let pkRequest = PKPaymentRequest();
             pkRequest.countryCode = "US"
